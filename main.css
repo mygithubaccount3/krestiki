@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 600px;
+    background: lightgreen;
+    margin: 0 auto;
+}
+
+.inner {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border: 2px solid black;
+}
+
+.wrapper {
+    font-size: 0px;
+    margin-top: 10px;
+}
+
+.inner:nth-child(10n) {
+    border-right-width: 0px;
+}
+
+.inner:nth-child(10n + 1) {
+    border-left-width: 0px;
+}
+
+.inner:nth-child(-n + 10) {
+    border-top-width: 0px;
+}
+
+.inner:nth-child(n - 10) {
+    border-bottom-width: 0px;
+}
+
+.inner:nth-child(n) {
+    border-left-width: 0px;
+}
+
+.inner:nth-child(n + 31) {
+    background-color: red;
+}
+
+.inner:nth-child(n + 34) {
+    background-color: lightgreen;
+}
+
+.inner:nth-child(11n + 1) {
+    background-color: green;
+}
+
+
+
